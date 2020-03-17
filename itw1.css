@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, serif;
+    text-decoration: none;
+    font-weight: inherit;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#navbar{
+    background-image: url(./img/bg.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+#navbar li {
+    margin-top: 10px;
+    padding: 3px;
+    display: inline-block;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+#navbar a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    padding-right: 25px;
+    line-height: 0.2em;
+    letter-spacing: 0.2em;
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+}
+
+#section-home {
+    background-image: url(./img/bg.jpg);
+    background-size: cover;
+    height: 95vh;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center;
+}
+
+#section-home h1 {
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62px;
+    margin-top: -110px;
+}
+
+p.sub-heading {
+    text-align: center;
+    width: 500px;
+    font-size: 16px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-left: 75px;
+}
+
+#section-home p a {
+    border: 0.5px solid dimgrey;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 16px 32px;
+    font-size: 13px;
+    text-decoration: none;
+    margin-left: 200px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+#section-about h2 {
+    font-family: Montserrat, sans-serif;
+    letter-spacing: 0.2em;
+    font-size: 32px;
+    width: 50px;
+    height: 75px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#section-about .descript {
+    margin-top: 120px;
+    display: inline-block;
+    min-width: 350px;
+    margin-right: 300px;
+    margin-left: 40px;
+}
+
+#section-about .descript p {
+    width: 300px;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 5px;
+    color: #868e96;
+}
+
+/*TODO FLEX S TYMI +*/
+#section-about div {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-left: 200px;
+}
+
+#section-about .photos img {
+    margin-top: 120px;
+    max-width: 95%;
+    height: auto;
+}
+
+#section-about p a {
+    text-decoration: none;
+    color: #ee0427;
+}
+
+#section-about p a:hover{
+    color: blue;
+}
+
+#section-menu {
+    margin-bottom: 250px;
+}
+
+#section-menu h2 {
+    font-family: Montserrat, sans-serif;
+    margin-top: 300px;
+    margin-bottom: 100px;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.tabs .active.btn{
+    border: 1.5px solid black;
+    color: black;
+    padding: 16px 24px;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.tabs .btn{
+    border: 0.5px solid darkgrey;
+    color: #868e96;
+    padding: 16px 32px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.tabs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menucols{
+    margin-bottom: 100px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.price{
+    position: relative;
+    margin-left: 450px;
+    margin-bottom: 10px;
+    top: -35px;
+}
+
+.menuitem h3 {
+    color: #212529;
+}
+
+.menuitem p {
+    margin-top: 12px;
+    color: #868e96;
+    min-width: 500px;
+}
+
+.dark {
+    background-image: url(./img/bg.jpg);
+    background-size: cover;
+}
+
+.dark h2 {
+    padding-top: 225px;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62px;
+    margin-top: -110px;
+    margin-bottom: 50px;
+}
+
+.dark .content h2+p {
+    margin: 0 auto;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    padding-bottom: 225px;
+}
+
+#section-gallery h2 {
+    font-family: Montserrat, sans-serif;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+#section-gallery div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+#section-gallery div.content{
+    text-align: center;
+}
+
+#section-gallery .photos img {
+    margin-bottom: 150px;
+    max-width: 55%;
+    height: auto;
+}
+
+#section-testimonials{
+    background-color: #e4f8f4;
+    padding-bottom: 250px;
+}
+
+#section-testimonials h2 {
+    flex: 0 0 100%;
+    padding-top: 150px;
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 100px;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+#section-testimonials div.testimonial:before {
+    display: block;
+    color: #212529;
+    content: open-quote;
+    font-size: 100px;
+    text-align: center;
+    font-family: "Crimson Text", sans-serif;
+    margin-bottom: -50px;
+}
+
+#section-testimonials div.testimonial:after {
+    visibility: hidden;
+    content: close-quote;
+}
+
+#section-testimonials div.content{
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1140px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#section-testimonials div.testimonial{
+    flex-basis: 33.33%;
+    min-width: 0;
+}
+
+#section-testimonials .testimonial blockquote {
+    box-sizing: border-box;
+    word-wrap: break-word;
+    display: block;
+    max-width: 350px;
+    font-family: "Crimson-Text", serif;
+    color: #212529;
+    text-align: center;
+    margin-bottom: 50px;
+    line-height: 35px;
+}
+
+#section-testimonials .testimonial img {
+    border-radius: 50%;
+    max-width: 22%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#section-testimonials .name {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 15px;
+    letter-spacing: 0.05em;
+}
+
+#section-testimonials .nick{
+    color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+#section-events h2 {
+    padding-top: 150px;
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 50px;
+    font-size: 32px;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+#section-events .card-deck{
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1140px;
+    min-width: 350px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+#section-events .card-img-top{
+    max-width: 100%;
+    height: auto;
+}
+
+#section-events .card{
+    flex-basis: 33.33%;
+    margin-right: -50px;
+    min-width: 350px;
+    background-color: #ffffff;
+    margin-bottom: 250px;
+}
+
+#section-events{
+    background-color: #f9f9f9;
+}
+
+#section-events .card-body {
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    position: relative;
+    right: -40px;
+}
+
+#section-events small {
+    text-transform: uppercase;
+    color: #b3b8bd;
+}
+
+#section-events .card-body h4 {
+    margin-top: 5px;
+    max-width: 200px;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+#section-events .card-body h4 a{
+    text-decoration: none;
+    letter-spacing: 0.01em;
+    color: #ee0427;
+}
+
+#section-events .card-body p {
+    max-width: 260px;
+    color: #868e96;
+    line-height: 30px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+    color: #868e96;
+    background-color: #f9f9f9;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
