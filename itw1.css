@@ -394,6 +394,10 @@ ul {
     color: #ee0427;
 }
 
+#section-events .card-body h4 a:hover{
+    color: blue;
+}
+
 #section-events .card-body p {
     max-width: 260px;
     color: #868e96;
