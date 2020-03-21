@@ -8,11 +8,10 @@
 
 body {
     overflow-x: hidden;
+    background-image: url(./img/bg.jpg);
 }
 
 #navbar{
-    background-image: url(./img/bg.jpg);
-    background-size: cover;
     text-align: center;
 }
 
@@ -36,8 +35,6 @@ body {
 }
 
 #section-home {
-    background-image: url(./img/bg.jpg);
-    background-size: cover;
     height: 95vh;
     display: flex;
     justify-content: center; /* align horizontal */
@@ -101,6 +98,10 @@ p.sub-heading {
     color: #868e96;
 }
 
+#section-about{
+    background-color: white;
+}
+
 /*TODO FLEX S TYMI +*/
 #section-about div {
     display: flex;
@@ -125,7 +126,9 @@ p.sub-heading {
 }
 
 #section-menu {
-    margin-bottom: 250px;
+    padding-top: 50px;
+    padding-bottom: 75px;
+    background-color: white;
 }
 
 #section-menu h2 {
@@ -194,18 +197,13 @@ ul {
     min-width: 500px;
 }
 
-.dark {
-    background-image: url(./img/bg.jpg);
-    background-size: cover;
-}
-
 .dark h2 {
     padding-top: 225px;
     text-align: center;
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     font-size: 62px;
-    margin-top: -110px;
+    margin-top: -50px;
     margin-bottom: 50px;
 }
 
@@ -216,9 +214,14 @@ ul {
     padding-bottom: 225px;
 }
 
+#section-gallery {
+    background-color: white;
+    padding-top: 150px;
+}
+
 #section-gallery h2 {
     font-family: Montserrat, sans-serif;
-    margin-top: 150px;
+    margin-top: 25px;
     margin-bottom: 100px;
     font-size: 32px;
     text-align: center;
