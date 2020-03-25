@@ -13,6 +13,7 @@ body {
 
 #navbar{
     text-align: center;
+    height: 10vh;
 }
 
 #navbar li {
@@ -35,7 +36,7 @@ body {
 }
 
 #section-home {
-    height: 95vh;
+    height: 85vh;
     display: flex;
     justify-content: center; /* align horizontal */
     align-items: center;
@@ -58,6 +59,11 @@ p.sub-heading {
     margin-bottom: 50px;
     margin-top: 20px;
     margin-left: 75px;
+}
+
+#section-home p a:hover{
+    background-color: white;
+    color: black;
 }
 
 #section-home p a {
